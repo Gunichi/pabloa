@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+$color-primary: #FFF;
+
+$width : 400px;
+$height : 250px;
+$primary_color : #FFF;
+$border_color--hover : lighten($primary_color, 80);
+$stroke : 2px;
+$border: $stroke solid darken($primary_color, 10);
+$transition_duration: 100ms;
+$pipeline_width: $width+$stroke;
+$pipeline_height: $height+$stroke;
+$pipes : 4;
+
+@function border-pipeline ($transition_duration, $pipe) {
+  @return $transition_duration*$pipe;
+}
+
+@mixin border-animation($dimension, $easing , $pipe ) {
+  transition: $transition_duration $dimension $easing border-pipeline($transition_duration, $pipe);
+  -web-kit-transition: $transition_duration $dimension $easing border-pipeline($transition_duration, $pipe);
+}
+
+.box {
+  text-align: center;
+  padding: 20px;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+.profileImage:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  color: $color-primary;
+  margin: 10;
+  font-size: 32px;
+  font-family: 'Merriweather', serif;
+}
+
+.subtitle {
+  color: $color-primary;
+  margin: 10;
+  font-size: 14px;
+}
+
+.cardBox {
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  border-radius: 15px;
+  border: 2px solid $primary_color;
+  width: 600px;
+  height: 350px;
+  box-shadow: rgba(241, 241, 241, 0.35) 0px 5px 15px;
+}
+
+.cardImage:hover {
+  background: $primary_color;
+  margin: auto;
+  border: $border;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: ($transition_duration*$pipes)+$transition_duration ease;
+
+  &:before {
+    position: absolute;
+    width: 0;
+    height: $stroke;
+    content: '';
+    background: #fff;
+    top: -$stroke;
+    left: -$stroke;
+    @include border-animation(width, ease, 3);
+  }
+
+  &:after {
+    position: absolute;
+    width: $stroke;
+    height: 0;
+    content: '';
+    background: #fff;
+    top: -$stroke;
+    right: -$stroke;
+    @include border-animation(height, ease, 2);
+  }
+
+  &-inner:after {
+    position: absolute;
+    width: 0;
+    height: $stroke;
+    content: '';
+    background: #fff;
+    bottom: -$stroke;
+    right: -$stroke;
+    @include border-animation(width, ease, 1);
+  }
+
+  &-inner:before {
+    position: absolute;
+    width: $stroke;
+    height: 0;
+    content: '';
+    background: #fff;
+    bottom: -$stroke;
+    left: -$stroke;
+    @include border-animation(height, ease, 0);
+  }
+
+  &:hover {
+    border-color: transparent;
+    background: darken($primary_color, 30);
+    transition: ($transition_duration*$pipes)+$transition_duration ease;
+    transform: scale(1.1);
+
+    &:before {
+      width: $pipeline_width;
+      @include border-animation(width, ease, 0);
+    }
+
+    &:after {
+      height: $pipeline_height;
+      @include border-animation(height, ease, 1);
+    }
+
+    .box-inner:after {
+      width: $pipeline_width;
+      @include border-animation(width, ease, 2);
+    }
+
+    .box-inner:before {
+      height: $pipeline_height;
+      @include border-animation(height, ease, 3);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cardImage {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardImage {
+    width: 105%;
+    height: 25vh;
+  }
+}
