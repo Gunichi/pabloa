@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
 import { Inter } from 'next/font/google'
+import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 import styles from '@/styles/Home.module.css'
 
 import variables from '@/styles/variables.module.scss'
@@ -40,6 +41,17 @@ export default function Home() {
         </div>
         <div className={variables.cardBox}>
           <img src="https://i.imgur.com/uh8zRmr.png" alt="Pablo A" className={variables.cardImage} />
+        </div>
+        <div className={variables.cardSocial}>
+          Conecte-se comigo
+          <div className={variables.cardSocialIcons}>
+            <a href="https://www.linkedin.com/in/pabloa/" target="_blank" rel="noreferrer">
+              <AiFillInstagram className={variables.cardSocialIcon} />
+            </a>
+            <a href="https://www.linkedin.com/in/pabloa/" target="_blank" rel="noreferrer">
+              <AiFillLinkedin className={variables.cardSocialIcon} />
+            </a>
+          </div>
         </div>
       </main>
     </>

@@ -60,10 +60,9 @@ $pipes : 4;
 .cardImage {
   border-radius: 15px;
   border: 1px solid $primary_color;
-  max-width: 100%;
+  max-width: 850px;
   height: auto;
   box-shadow: rgba(241, 241, 241, 0.35) 0px 5px 15px;
-  transform: scale(.7);
 }
 
 .cardImage:hover {
@@ -124,7 +123,7 @@ $pipes : 4;
     border-color: transparent;
     background: darken($primary_color, 30);
     transition: ($transition_duration*$pipes)+$transition_duration ease;
-    transform: scale(1);
+    transform: scale(1.1);
 
     &:before {
       width: $pipeline_width;
@@ -148,14 +147,38 @@ $pipes : 4;
   }
 }
 
+.cardSocial {
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: #FFF;
+}
+
+.cardSocialIcon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #26FFBD;
+}
+
+.cardSocialIcon:hover {
+  transform: scale(1.1);
+  color: #26ffbebb;
+}
+
+
 @media (max-width: 768px) {
   .cardImage {
-    transform: scale(1);
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 576px) {
   .cardImage {
-    transform: scale(1);
+    width: 100%;
+    height: auto;
   }
 }
