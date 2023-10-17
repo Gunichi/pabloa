@@ -51,6 +51,11 @@ $pipes : 4;
   font-size: 14px;
 }
 
+.title:hover, .subtitle:hover {
+  color: $primary_color;
+  transition: 0.5s;
+}
+
 .cardBox {
   justify-content: center;
   align-items: center;
@@ -123,7 +128,7 @@ $pipes : 4;
     border-color: transparent;
     background: darken($primary_color, 30);
     transition: ($transition_duration*$pipes)+$transition_duration ease;
-    transform: scale(1.1);
+    transform: scale(1.03);
 
     &:before {
       width: $pipeline_width;

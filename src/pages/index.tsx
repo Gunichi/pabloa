@@ -24,24 +24,24 @@ export default function Home() {
             Pablo A. Borges
           </div>
           <div className={variables.subtitle}>
-            @pabloa
+            @pabloaborges
           </div>
         </div>
-        <div className={variables.cardBox}>
+        {/* <div className={variables.cardBox}>
           <img src="https://i.imgur.com/JgGV9nN.png" alt="Pablo A" className={variables.cardImage} />
+        </div> */}
+        <div className={variables.cardBox}>
+          <img src="https://i.imgur.com/IwYsl94.png" alt="Pablo A" className={variables.cardImage} />
         </div>
         <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/wmYv9V9.png" alt="Pablo A" className={variables.cardImage} />
+          <img src="https://i.imgur.com/WYq8QHl.png" alt="Pablo A" className={variables.cardImage} />
         </div>
         <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/IuzacgI.png" alt="Pablo A" className={variables.cardImage} />
+          <img src="https://i.imgur.com/SJlKeIr.png" alt="Pablo A" className={variables.cardImage} />
         </div>
-        <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/EkQYuLP.png" alt="Pablo A" className={variables.cardImage} />
-        </div>
-        <div className={variables.cardBox}>
+        {/* <div className={variables.cardBox}>
           <img src="https://i.imgur.com/uh8zRmr.png" alt="Pablo A" className={variables.cardImage} />
-        </div>
+        </div> */}
         <div className={variables.cardSocial}>
           Conecte-se comigo
           <div className={variables.cardSocialIcons}>
