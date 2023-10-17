@@ -45,11 +45,11 @@ export default function Home() {
         <div className={variables.cardBoxNormal}>
           <img src="https://i.imgur.com/CRCmyJk.png" alt="Pablo A" className={variables.cardImageNormal} />
         </div>
-        <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/D282Ft5.png" alt="Pablo A" className={variables.cardImage} />
+        <div className={variables.cardBox} onClick={() => window.open('https://q0x6v5uj9pq.typeform.com/to/waQMH69w', '_blank')}>
+          <img src="https://i.imgur.com/0Civ7dB.png" alt="Pablo A" className={variables.cardImage} />
         </div>
-        <div className={variables.cardBoxNormal}>
-          <img src="https://i.imgur.com/K4p2Ltz.png" alt="Pablo A" className={variables.cardImageNormal} />
+        <div className={variables.cardBoxNormal} onClick={() => window.open('https://pay.hotmart.com/B86580752U', '_blank')}>
+          <img src="https://i.imgur.com/Sd8FXFi.png" alt="Pablo A" className={variables.cardImageNormal} />
         </div>
         <div className={variables.cardBoxNormal}>
           <img src="https://i.imgur.com/tWKSWMS.png" alt="Pablo A" className={variables.cardImageNormal} />
