@@ -54,7 +54,8 @@ $pipes : 4;
   font-size: 14px;
 }
 
-.title:hover, .subtitle:hover {
+.title:hover,
+.subtitle:hover {
   color: $primary_color;
   transition: 0.5s;
 }
@@ -197,15 +198,65 @@ $pipes : 4;
 }
 
 @media (max-width: 768px) {
-  .cardImage, .cardImageNormal {
+
+  .cardImage,
+  .cardImageNormal {
     width: 100%;
     height: auto;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .cardSocial {
+    font-size: 12px;
+  }
+
+  .cardSocialLink {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 576px) {
-  .cardImage, .cardImageNormal {
+
+  .cardImage,
+  .cardImageNormal {
     width: 100%;
     height: auto;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .cardSocial {
+    font-size: 12px;
+  }
+
+  .cardSocialLink {
+    font-size: 12px;
   }
 }
