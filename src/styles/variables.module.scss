@@ -24,7 +24,7 @@ $pipes : 4;
 
 .box {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   margin: 15px;
 }
 
@@ -37,18 +37,20 @@ $pipes : 4;
 
 .profileImage:hover {
   transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: #26ffbe7c 0px 5px 15px;
 }
 
 .title {
-  color: $color-primary;
+  color: $primary_color;
   margin: 10;
   font-size: 32px;
   // font-family: 'Merriweather', serif;
 }
 
 .subtitle {
-  color: $color-primary;
-  margin: 10;
+  color: #FFF;
+  margin: 15;
   font-size: 14px;
 }
 
@@ -69,6 +71,23 @@ $pipes : 4;
   max-width: 850px;
   height: auto;
   box-shadow: rgba(241, 241, 241, 0.35) 0px 5px 15px;
+}
+
+.cardBoxNormal {
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.cardImageNormal {
+  border-radius: 15px;
+  max-width: 850px;
+  height: auto;
+}
+
+.cardImageNormal:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .cardImage:hover {
@@ -160,20 +179,21 @@ $pipes : 4;
   color: #FFF;
 }
 
-.cardSocialIcon {
-  width: 40px;
-  height: 40px;
+.cardSocial:hover {
+  color: $primary_color;
+}
+
+.cardSocialLink {
   margin: 10px;
-  border-radius: 50px;
+  color: #FFF;
   transition: 0.5s;
-  color: #26FFBD;
+  text-decoration: none;
 }
 
-.cardSocialIcon:hover {
-  transform: scale(1.1);
-  color: #26ffbebb;
+.cardSocialLink:hover {
+  color: $primary_color;
+  text-decoration: underline;
 }
-
 
 @media (max-width: 768px) {
   .cardImage {

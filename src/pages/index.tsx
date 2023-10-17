@@ -20,43 +20,40 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className={variables.box}>
           <img src="https://i.imgur.com/F4LUPrb.png" alt="Pablo A" className={variables.profileImage} />
-          <div className={variables.title}>
-            Pablo A. Borges
+          <div className={variables.cardSocial}>
+            <div className={variables.title}>
+              Pablo A. Borges
+            </div>
           </div>
           <div className={variables.subtitle}>
             Software Engineer • CTO • Ethical hacker • Mentor
           </div>
             
-          <div className={variables.subtitle}>
-            @pabloaborges
+          <div className={variables.cardSocial}>
+            Conecte-se comigo: 
+            <a href="https://www.linkedin.com/in/pabloa/" target="_blank" rel="noreferrer" className={variables.cardSocialLink}>
+              LinkedIn
+            </a> • 
+            <a href="https://www.instagram.com/pabloaborges/" target="_blank" rel="noreferrer" className={variables.cardSocialLink}>
+              Instagram
+            </a>
           </div>
         </div>
         {/* <div className={variables.cardBox}>
           <img src="https://i.imgur.com/JgGV9nN.png" alt="Pablo A" className={variables.cardImage} />
         </div> */}
-        <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/aFwQuER.png" alt="Pablo A" className={variables.cardImage} />
+        <div className={variables.cardBoxNormal}>
+          <img src="https://i.imgur.com/CRCmyJk.png" alt="Pablo A" className={variables.cardImageNormal} />
         </div>
         <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/WYq8QHl.png" alt="Pablo A" className={variables.cardImage} />
+          <img src="https://i.imgur.com/D282Ft5.png" alt="Pablo A" className={variables.cardImage} />
         </div>
-        <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/SJlKeIr.png" alt="Pablo A" className={variables.cardImage} />
+        <div className={variables.cardBoxNormal}>
+          <img src="https://i.imgur.com/K4p2Ltz.png" alt="Pablo A" className={variables.cardImageNormal} />
         </div>
-        {/* <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/uh8zRmr.png" alt="Pablo A" className={variables.cardImage} />
-        </div> */}
-        <div className={variables.cardSocial}>
-          Conecte-se comigo
-          <div className={variables.cardSocialIcons}>
-            <a href="https://www.linkedin.com/in/pabloa/" target="_blank" rel="noreferrer">
-              <AiFillInstagram className={variables.cardSocialIcon} />
-            </a>
-            <a href="https://www.linkedin.com/in/pabloa/" target="_blank" rel="noreferrer">
-              <AiFillLinkedin className={variables.cardSocialIcon} />
-            </a>
-          </div>
-        </div>
+        <div className={variables.cardBoxNormal}>
+          <img src="https://i.imgur.com/tWKSWMS.png" alt="Pablo A" className={variables.cardImageNormal} />
+        </div>     
       </main>
     </>
   )

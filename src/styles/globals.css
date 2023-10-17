@@ -12,6 +12,6 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9); /* Cor preta semi-transparente (ajuste o valor do último componente para controlar a opacidade) */
+  background: rgba(0, 0, 0, 0.7); /* Cor preta semi-transparente (ajuste o valor do último componente para controlar a opacidade) */
   z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do corpo */
 }
