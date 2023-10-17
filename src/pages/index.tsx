@@ -24,6 +24,10 @@ export default function Home() {
             Pablo A. Borges
           </div>
           <div className={variables.subtitle}>
+            Software Engineer • CTO • Ethical hacker • Mentor
+          </div>
+            
+          <div className={variables.subtitle}>
             @pabloaborges
           </div>
         </div>
@@ -31,7 +35,7 @@ export default function Home() {
           <img src="https://i.imgur.com/JgGV9nN.png" alt="Pablo A" className={variables.cardImage} />
         </div> */}
         <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/IwYsl94.png" alt="Pablo A" className={variables.cardImage} />
+          <img src="https://i.imgur.com/aFwQuER.png" alt="Pablo A" className={variables.cardImage} />
         </div>
         <div className={variables.cardBox}>
           <img src="https://i.imgur.com/WYq8QHl.png" alt="Pablo A" className={variables.cardImage} />

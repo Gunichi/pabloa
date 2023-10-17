@@ -25,6 +25,7 @@ $pipes : 4;
 .box {
   text-align: center;
   padding: 20px;
+  margin: 15px;
 }
 
 .profileImage {
@@ -42,7 +43,7 @@ $pipes : 4;
   color: $color-primary;
   margin: 10;
   font-size: 32px;
-  font-family: 'Merriweather', serif;
+  // font-family: 'Merriweather', serif;
 }
 
 .subtitle {
