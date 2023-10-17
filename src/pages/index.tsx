@@ -27,20 +27,20 @@ export default function Home() {
           </div>
         </div>
         <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/ly8BjdG.png" alt="Pablo A" className={variables.cardImage} />
-
+          <img src="https://i.imgur.com/JgGV9nN.png" alt="Pablo A" className={variables.cardImage} />
         </div>
         <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/4Vbcc5D.png" alt="Pablo A" className={variables.cardImage} />
+          <img src="https://i.imgur.com/wmYv9V9.png" alt="Pablo A" className={variables.cardImage} />
         </div>
-
         <div className={variables.cardBox}>
-          <img src="https://i.imgur.com/vsNXhVa.png" alt="Pablo A" className={variables.cardImage} />
+          <img src="https://i.imgur.com/IuzacgI.png" alt="Pablo A" className={variables.cardImage} />
         </div>
-
-
-
-
+        <div className={variables.cardBox}>
+          <img src="https://i.imgur.com/EkQYuLP.png" alt="Pablo A" className={variables.cardImage} />
+        </div>
+        <div className={variables.cardBox}>
+          <img src="https://i.imgur.com/uh8zRmr.png" alt="Pablo A" className={variables.cardImage} />
+        </div>
       </main>
     </>
   )

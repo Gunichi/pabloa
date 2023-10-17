@@ -4,7 +4,7 @@ $color-primary: #FFF;
 
 $width : 400px;
 $height : 250px;
-$primary_color : #FFF;
+$primary_color : #26FFBD;
 $border_color--hover : lighten($primary_color, 80);
 $stroke : 2px;
 $border: $stroke solid darken($primary_color, 10);
@@ -59,10 +59,11 @@ $pipes : 4;
 
 .cardImage {
   border-radius: 15px;
-  border: 2px solid $primary_color;
-  width: 600px;
-  height: 350px;
+  border: 1px solid $primary_color;
+  max-width: 100%;
+  height: auto;
   box-shadow: rgba(241, 241, 241, 0.35) 0px 5px 15px;
+  transform: scale(.7);
 }
 
 .cardImage:hover {
@@ -123,7 +124,7 @@ $pipes : 4;
     border-color: transparent;
     background: darken($primary_color, 30);
     transition: ($transition_duration*$pipes)+$transition_duration ease;
-    transform: scale(1.1);
+    transform: scale(1);
 
     &:before {
       width: $pipeline_width;
@@ -149,14 +150,12 @@ $pipes : 4;
 
 @media (max-width: 768px) {
   .cardImage {
-    width: 100%;
-    height: 30vh;
+    transform: scale(1);
   }
 }
 
 @media (max-width: 576px) {
   .cardImage {
-    width: 105%;
-    height: 25vh;
+    transform: scale(1);
   }
 }
