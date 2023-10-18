@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={variables.box}>
-          <img src="https://i.imgur.com/F4LUPrb.png" alt="Pablo A" className={variables.profileImage} />
+          <img src="./pablo.png" alt="Pablo A" className={variables.profileImage} />
           <div className={variables.cardSocial}>
             <div className={variables.title}>
               Pablo A. Borges
@@ -28,28 +28,43 @@ export default function Home() {
           <div className={variables.subtitle}>
             Software Engineer • CTO • Hacker • Mentor
           </div>
-            
+
           <div className={variables.cardSocial}>
-            Conecte-se comigo: 
+            Conecte-se comigo:
             <a href="https://www.linkedin.com/in/pabloaborges/" target="_blank" rel="noreferrer" className={variables.cardSocialLink}>
               LinkedIn
-            </a> • 
+            </a> •
             <a href="https://www.instagram.com/opabloaborges/" target="_blank" rel="noreferrer" className={variables.cardSocialLink}>
               Instagram
             </a>
           </div>
           <div className={variables.cardBoxNormal}>
-          <img src="https://i.imgur.com/CRCmyJk.png" alt="Pablo A" className={variables.cardImageNormal} />
-        </div>
-        <div className={variables.cardBox} onClick={() => window.open('https://q0x6v5uj9pq.typeform.com/to/waQMH69w', '_blank')}>
-          <img src="https://i.imgur.com/0Civ7dB.png" alt="Pablo A" className={variables.cardImage} />
-        </div>
-        <div className={variables.cardBoxNormal} onClick={() => window.open('https://pay.hotmart.com/B86580752U', '_blank')}>
-          <img src="https://i.imgur.com/Sd8FXFi.png" alt="Pablo A" className={variables.cardImageNormal} />
-        </div>
-        <div className={variables.cardBoxNormal}>
-          <img src="https://i.imgur.com/tWKSWMS.png" alt="Pablo A" className={variables.cardImageNormal} />
-        </div>     
+            <img src="./ascencaotech.png"
+              alt="Mentoria Ascenção Tech"
+              className={variables.cardImageNormal}
+            />
+          </div>
+          <div className={variables.cardBox} onClick={() => window.open('https://q0x6v5uj9pq.typeform.com/to/waQMH69w', '_blank')}>
+            <img
+              src="./consultoriagratuita.png"
+              alt="Aplicação para consultoria estratégica gratuita"
+              className={variables.cardImage}
+            />
+          </div>
+          <div
+            className={variables.cardBoxNormal} onClick={() => window.open('https://pay.hotmart.com/B86580752U', '_blank')}>
+            <img
+              src="./ascencaodev.png"
+              alt="Mentoria Ascenção Dev"
+              className={variables.cardImageNormal} />
+          </div>
+          <div className={variables.cardBoxNormal}>
+            <img 
+              src="./mentoriaincompany.png"
+              alt="Mentoria In Company"
+              className={variables.cardImageNormal} 
+            />
+          </div>
         </div>
         {/* <div className={variables.cardBox}>
           <img src="https://i.imgur.com/JgGV9nN.png" alt="Pablo A" className={variables.cardImage} />
