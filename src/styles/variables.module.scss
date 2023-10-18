@@ -205,6 +205,13 @@ $pipes : 4;
     height: auto;
   }
 
+  .cardBoxNormal {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+  }
+
   .profileImage {
     width: 150px;
     height: 150px;
@@ -213,19 +220,19 @@ $pipes : 4;
   }
 
   .title {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .subtitle {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .cardSocial {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .cardSocialLink {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -237,6 +244,10 @@ $pipes : 4;
     height: auto;
   }
 
+  .cardSocial {
+    margin: 5px;
+  }
+
   .profileImage {
     width: 150px;
     height: 150px;
@@ -245,18 +256,18 @@ $pipes : 4;
   }
 
   .title {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .subtitle {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .cardSocial {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .cardSocialLink {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
