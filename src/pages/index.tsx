@@ -33,9 +33,9 @@ export default function Home() {
             Conecte-se comigo:
             <a href="https://www.linkedin.com/in/pabloaborges/" target="_blank" rel="noreferrer" className={variables.cardSocialLink}>
               LinkedIn
-            </a> •
+            </a>•
             <a href="https://www.instagram.com/opabloaborges/" target="_blank" rel="noreferrer" className={variables.cardSocialLink}>
-              Instagram
+            Instagram
             </a>
           </div>
           <div className={variables.cardBoxNormal}>
