@@ -201,47 +201,9 @@ $pipes : 4;
 
   .cardImage,
   .cardImageNormal {
-    width: 100%;
+    width: 130%;
     height: auto;
-  }
-
-  .cardBoxNormal {
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    cursor: pointer;
-  }
-
-  .profileImage {
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    margin: 10px;
-  }
-
-  .title {
-    font-size: 16px;
-  }
-
-  .subtitle {
-    font-size: 10px;
-  }
-
-  .cardSocial {
-    font-size: 10px;
-  }
-
-  .cardSocialLink {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 576px) {
-
-  .cardImage,
-  .cardImageNormal {
-    width: 100%;
-    height: auto;
+    margin-left: -15%;
   }
 
   .cardSocial {
@@ -259,15 +221,36 @@ $pipes : 4;
     font-size: 16px;
   }
 
-  .subtitle {
+  .subtitle, .cardSocial, .cardSocialLink {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .cardImage,
+  .cardImageNormal {
+    width: 130%;
+    height: auto;
+    margin-left: -15%;
   }
 
   .cardSocial {
-    font-size: 10px;
+    margin: 5px;
   }
 
-  .cardSocialLink {
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .subtitle, .cardSocial, .cardSocialLink {
     font-size: 10px;
   }
 }

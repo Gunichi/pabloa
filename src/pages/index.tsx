@@ -38,32 +38,34 @@ export default function Home() {
             Instagram
             </a>
           </div>
-          <div className={variables.cardBoxNormal}>
-            <img src="./ascencaotech.png"
-              alt="Mentoria Ascenção Tech"
-              className={variables.cardImageNormal}
-            />
-          </div>
-          <div className={variables.cardBox} onClick={() => window.open('https://q0x6v5uj9pq.typeform.com/to/waQMH69w', '_blank')}>
-            <img
-              src="./consultoriagratuita.png"
-              alt="Aplicação para consultoria estratégica gratuita"
-              className={variables.cardImage}
-            />
-          </div>
-          <div
-            className={variables.cardBoxNormal} onClick={() => window.open('https://pay.hotmart.com/B86580752U', '_blank')}>
-            <img
-              src="./ascencaodev.png"
-              alt="Mentoria Ascenção Dev"
-              className={variables.cardImageNormal} />
-          </div>
-          <div className={variables.cardBoxNormal}>
-            <img 
-              src="./mentoriaincompany.png"
-              alt="Mentoria In Company"
-              className={variables.cardImageNormal} 
-            />
+          <div className={variables.cards}>
+            <div className={variables.cardBoxNormal}>
+              <img src="./ascencaotech.png"
+                alt="Mentoria Ascenção Tech"
+                className={variables.cardImageNormal}
+              />
+            </div>
+            <div className={variables.cardBox} onClick={() => window.open('https://q0x6v5uj9pq.typeform.com/to/waQMH69w', '_blank')}>
+              <img
+                src="./consultoriagratuita.png"
+                alt="Aplicação para consultoria estratégica gratuita"
+                className={variables.cardImage}
+              />
+            </div>
+            <div
+              className={variables.cardBoxNormal} onClick={() => window.open('https://pay.hotmart.com/B86580752U', '_blank')}>
+              <img
+                src="./ascencaodev.png"
+                alt="Mentoria Ascenção Dev"
+                className={variables.cardImageNormal} />
+            </div>
+            <div className={variables.cardBoxNormal}>
+              <img 
+                src="./mentoriaincompany.png"
+                alt="Mentoria In Company"
+                className={variables.cardImageNormal} 
+              />
+            </div>
           </div>
         </div>
         {/* <div className={variables.cardBox}>
