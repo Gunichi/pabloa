@@ -45,7 +45,7 @@ export default function Home() {
                 className={variables.cardImageNormal}
               />
             </div>
-            <div className={variables.cardBox} onClick={() => window.open('https://q0x6v5uj9pq.typeform.com/to/waQMH69w', '_blank')}>
+            <div className={variables.cardBox} onClick={() => window.open('http://pablo.izzicupoborges.com', '_blank')}>
               <img
                 src="./consultoriagratuita.png"
                 alt="Aplicação para consultoria estratégica gratuita"
